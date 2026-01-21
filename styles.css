@@ -50,7 +50,6 @@ body {
     margin-top: 3em;
     padding-bottom: 1em;
     padding-left: 1em;
-
     background-color: rgb(224, 246, 255);
     
     /* border is slighty visible */
@@ -113,5 +112,12 @@ td {
 @media only screen and (max-width: 768px) {
     #header {
         line-height: 0.8;
+    }
+}
+
+/*increase line-height*/
+@media only screen and (max-width: 1000px) {
+    #main-content p {
+        line-height: 1.2;  
     }
 }

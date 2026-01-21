@@ -9,8 +9,7 @@ body {
     padding-bottom: 1em;
     text-align: center;
     color: white;
-    line-height: 0.2;
-    
+    line-height: 0.2;  /* squeezing the h1 and p closer together */
 }
 
 
@@ -25,83 +24,92 @@ body {
 }
 
 #main-content {
+    /* padding all around */
     padding: 1em;
 }
 
 #main-content h2, h3 {
-   text-transform: uppercase; 
+   text-transform: uppercase; /* capitalize h2 and h3 */
 }
 
 #main-content h2 {
-    padding-bottom: 1em;
+    padding-bottom: 1em;  /* more pronounced separation of "Introduction" header from paragraph text */
 }
 
 #main-content li {
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* each list item has some space below */
 }
 
 #main-content p {
-    line-height: 0;
+    line-height: 0;  /* paragraph text gets squeezed closer to "Amazing Facts"*/
 }
 
 
 #quiz-section {
+    /* increasing margins and padding to be correctly positioned in own section */
     margin-top: 3em;
     padding-bottom: 1em;
     padding-left: 1em;
+
     background-color: rgb(224, 246, 255);
+    
+    /* border is slighty visible */
     border-style: solid;
     border-color: lightgray;
     border-width: 1.5px;
-    line-height: 1.6;
+
+    line-height: 1.6; /* increasing line-height for that space between the input fields */
 }
 
 #quiz-section h2 {
     font-weight: 700;
-    padding: 0;
-    margin-bottom: 30px ;
+    padding: 0; /* completely remove padding */
+    margin-bottom: 30px; /* add some space below */
 }
 
 
 span {
-    color: orangered;
+    /* so "mantle" is marked in bold, orange color */
+    color: orangered; 
     font-weight: 700;
 }
 
 #quiz-section img {
-    float: right;
+    /* an attempt to position and scale image like in the example */
+    float: right; /* get the img to be place on the right of the quiz sectiom */
     margin-top: 2em;
     margin-right: 5em;
     border-color: blueviolet;
     border-style: solid;
     border-width: 4px;
-    width: 6em;
+    width: 6em; 
 }
 
-#species-table {
-    padding: 1em;
+#species-table h2 {
+    margin: 0; /* to leave no space between header and table */
 }
-
 
 th {
     background-color: rgb(151, 150, 150);
     color: white;
     text-align: left;
-    padding: 5px;
+    padding: 5px; /* adding space around header cells */
 }
 
 td {
-    padding: 5px;
+    padding: 5px; /* adding space around table cells */
 }
 
 #footer {
+    /* strip of gray footer with some space above and below it*/
     background-color: lightgray;
     margin-bottom: 2em;
-    margin-top: 1em;
+    margin-top: 2em;
     padding: 2px;
     text-align: center;
 }
 
+/* personal preference: when the screen size is smaller and the header text gets wrapped, line height is increased so the wrapped text doesn't overlap over one another*/
 @media only screen and (max-width: 768px) {
     #header {
         line-height: 0.8;
